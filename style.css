@@ -1,0 +1,190 @@
+
+/* Hard image :- https://i.pinimg.com/originals/fc/f3/bc/fcf3bc8da098faed9d62137cf7cbb94c.gif */
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--text-color); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bgcolor); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(76, 192, 231, .6);  
+  }
+
+
+  /* ===========Reusable=========== */
+
+:root{
+    --text-color: rgb(28,28,28);
+    --bgcolor: rgb(237,198,102);
+}
+
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.bg-color{
+    color: var(--bgcolor);
+}
+/* ===========navbar=========== */
+.nav-right{
+    display: flex;
+    justify-content: end;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: start;
+}
+
+
+.bg-light-red{
+    background: rgb(255, 236, 236);
+}
+
+.active{
+    color: white !important;
+    background: var(--bgcolor);
+    border-radius: 6px;
+    transition: .3 ease background-color;
+}
+
+/* ===========Home=========== */
+
+.home-section{
+    background: white;
+}
+
+
+/* ===========About=========== */
+
+h3, h5{
+    margin-bottom: -0.1rem !important;
+}
+
+p, h1, h2, h3, h5, h4{
+    color: var(--text-color);
+}
+
+.about-image img{
+    width: 25rem;
+}
+
+.about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ===========Services=========== */
+
+.fa-brands{
+    font-size: 6rem;
+    color: var(--text-color);
+}
+
+.bg-light-dark{
+    background: var(--bgcolor);
+   transition: all .3s ease;
+}
+
+.bg-light-dark:hover{
+    box-shadow: 3px 3px 30px 0px rgb(255, 162, 162);
+}
+
+
+
+/* ===========Skills=========== */
+
+.text-justify{
+    text-align: justify;
+}
+
+.progress-bar{
+    background: var(--bgcolor) !important;
+    color: var(--text-color) !important;
+    border-radius: 5px;
+}
+
+
+/* ===========Contact=========== */
+
+.fa-solid{
+position: relative;
+top: -5px;
+}
+.contact-logo{
+    color: var(--bgcolor);
+}
+
+
+
+/* ===========Contact=========== */
+
+/* .contact-section{
+    background-image: linear-gradient(to top right,  rgb(255, 236, 236), rgb(75, 75, 75));
+} */
+
+.contact-section input{
+    margin-bottom: 1rem;
+}
+
+
+
+/* ===========ScrollToTop=========== */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--bgcolor); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    padding-bottom: 0px;
+}
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.STT button{
+    display: flex !important;
+    align-items: center !important;
+}
+
+.footer-para p{
+    margin-bottom: -1rem !important;
+}
+
+
+
