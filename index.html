@@ -73,7 +73,7 @@
     <div class="home-section" id="home">
         <div class="row">
             <div class="col p-5 d-flex flex-column justify-content-center align-items-center home-left">
-                <div class="home-info">
+                <div class="home-info" style="width: 256px;">
                     <p class="pt-5"> Hi, My Name is</p>
                     <h1>Ashutosh Singh</h1>
                     <!-- typed section -->
@@ -84,6 +84,7 @@
                             <p>Front End Developer.</p>
                             <p>Back End Developer.</p>
                             <p>Full Stack Developer.</p>
+                            <p>software Developer.</p>
                         </div>
                         <span class="typed bg-color"></span>
                     </div>
@@ -114,12 +115,12 @@
             </div>
             <div class="col px-5 about-right">
                 <div class="typer row row-cols-md-2 row-cols-sm-2 row-cols-1 ">
-                    <div class="col fw-bolder">
-                        <p>I'm Ashutosh Singh and </p>
+                    <div class="fw-bolder p-0" style="width: 185px;">
+                        <p class="m-0">I'm Ashutosh Singh and </p>
                     </div>
-                    <div class="col typed-section  pb-2 fw-bolder">
-                        I'm a
-                        <div class="typed-strings-about">
+                    <div class=" typed-section p-0 fw-bolder d-flex">
+                       <p class="me-1">I'm a</p> 
+                        <div class="typed-strings-about ms-1">
                             <p>Web Developer.</p>
                             <p>Front End Developer.</p>
                             <p>Back End Developer.</p>
@@ -320,6 +321,10 @@
     <!-- ====================Footer Section End================== -->
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+
 
 </body>
 
@@ -388,7 +393,9 @@
     // sr.reveal(`.skill-right`, { origin: 'right' })
     // sr.reveal(`.contact-left`, { origin: 'left' })
     // sr.reveal(`.contact-right`, { origin: 'right' })
-    sr.reveal(`.header`, { origin:'top', distance:'80px', delay: 300, duration: 2000,})
+    sr.reveal(`.header`, { origin:'top', distance:'80px', delay: 300, duration: 2000,});
+
+    
 
 </script>
 
