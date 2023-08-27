@@ -1,6 +1,11 @@
 
 /* Hard image :- https://i.pinimg.com/originals/fc/f3/bc/fcf3bc8da098faed9d62137cf7cbb94c.gif */
 
+*::selection{
+    background-color: var(--bgcolor);
+    color: var(--selectColor);
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -29,6 +34,7 @@
 :root{
     --text-color: rgb(28,28,28);
     --bgcolor: rgb(237,198,102);
+    --selectColor: #fff;
 }
 
 

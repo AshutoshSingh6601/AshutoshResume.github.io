@@ -22,7 +22,22 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//gsap
+var tl = gsap.timeline();
 
-let tl = gsap.timeline()
-
-
+tl.from(".navbar-brand",{
+  y:-40,
+  delay:0.3,
+  stagger: 0.5,
+  opacity: 0,
+})
+tl.from(".nav-item a",{
+  y:-40,
+  opacity: 0,
+  stagger: 0.5,
+})
+tl.from(".home-right img, .about-left img",{
+  opacity: 0,
+  scale:0,
+  stagger: 0.5,
+})

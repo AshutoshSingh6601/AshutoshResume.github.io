@@ -20,7 +20,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Hello, world!</title>
+    <title>Ashutosh - Portfolio</title>
 </head>
 
 <body>
@@ -44,22 +44,22 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon nav-left"></span>
             </button>
-            <div class="collapse navbar-collapse nav-left   " id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 nav mb-lg-0 ">
+            <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 nav mb-lg-0 fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link text-center active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link px-2 active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#about">About Us</a>
+                        <a class="nav-link px-2" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#service">Services</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#skill">Skills</a>
+                        <a class="nav-link px-2" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text text-center px-2" href="#contact">Contact Us</a>
+                        <a class="nav-link px-2" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text px-2" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -320,7 +320,7 @@
 
     <!-- ====================Footer Section End================== -->
 
-
+<!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
@@ -334,7 +334,7 @@
     crossorigin="anonymous"></script>
 
 <!-- javaScript File -->
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 
 <!-- typed.js -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
@@ -377,9 +377,9 @@
     const sr = ScrollReveal({
         origin: 'left',
         distance: '20rem',
-        duration: 2000,
-        delay: 400,
-        reset: true,
+        duration: 800,
+        delay: 100,
+        reset: false,
     })
 
     // sr.reveal(`.home-left  `, {distance: '6rem',})
