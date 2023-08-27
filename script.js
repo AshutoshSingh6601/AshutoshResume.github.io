@@ -31,13 +31,15 @@ tl.from(".navbar-brand",{
   stagger: 0.5,
   opacity: 0,
 })
-tl.from(".nav-item a",{
+gsap.from(".nav-item a",{
   y:-40,
   opacity: 0,
+  delay:0.3,
   stagger: 0.5,
 })
-tl.from(".home-right img, .about-left img",{
+gsap.from(".home-right img, .about-left img",{
   opacity: 0,
   scale:0,
-  stagger: 0.5,
+  delay:0.9,
+  stagger: .5,
 })
