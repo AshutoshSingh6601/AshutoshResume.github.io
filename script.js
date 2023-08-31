@@ -22,14 +22,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-var cls = document.querySelector(".close")
-let msgcls = document.querySelector(".mainClose")
-
-cls.addEventListener("click",() => {
-  console.log("Ashutosh")
-  msgcls.style.display = "none"
-})
-
 //gsap
 var tl = gsap.timeline();
 
@@ -39,7 +31,7 @@ tl.from(".navbar-brand",{
   stagger: 0.5,
   opacity: 0,
 })
-gsap.from(".nav-item a, top",{
+gsap.from(".nav-item a",{
   y:-40,
   opacity: 0,
   delay:0.3,
@@ -54,5 +46,4 @@ gsap.from(".home-right img, .about-left img",{
 gsap.from(".progress-bar",{
   width:-0,
   duration:2,
-
 })

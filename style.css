@@ -190,15 +190,5 @@ top: -5px;
     margin-bottom: -1rem !important;
 }
 
-.mainClose{
-    margin-top: 4.5rem !important;
-}
 
-.close{
-    font-weight: 20px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
 
